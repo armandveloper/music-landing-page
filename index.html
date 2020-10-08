@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Feel the music in a new way" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/app.css" />
+		<title>Musicy</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="wrapper">
+				<div class="header-inner">
+					<a href="/" class="logo-box">
+						<img src="img/logo.svg" alt="Musicy logo" />
+					</a>
+					<nav class="header-nav">
+						<a href="#" class="header-link">Products</a>
+						<a href="#" class="header-link">Features</a>
+						<a href="#" class="header-link">Pricing</a>
+						<a href="#" class="header-link">About us</a>
+					</nav>
+					<div class="auth-container">
+						<button class="btn">Login</button>
+						<button class="btn btn-blue">Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="hero">
+			<div class="wrapper">
+				<div class="hero-grid">
+					<div class="hero-cta">
+						<h1 class="hero-title">
+							<span class="blue">Feel</span> <br />
+							the <span class="red">music <br /> </span> in a
+							<span class="yellow">new way</span>.
+						</h1>
+						<p class="hero-text">
+							Millions of hit songs are waiting for you, Best
+							sound quality available.
+						</p>
+						<a href="#" class="btn btn-blue-2">Start Free Trial</a>
+						<p class="stores-text">Available now:</p>
+						<div class="app-stores-container">
+							<a
+								href="#"
+								class="app-store"
+								aria-label="Get on App Store"
+								><img src="img/app-store.png" alt="" />
+							</a>
+							<a
+								href="#"
+								class="app-store"
+								aria-label="Get on Play Store"
+								><img src="img/play-store.png" alt=""
+							/></a>
+						</div>
+					</div>
+					<div class="hero-img"></div>
+				</div>
+			</div>
+		</section>
+		<section class="section songs">
+			<div class="wrapper">
+				<div class="songs-grid">
+					<div class="songs-info">
+						<h2 class="headline">High quality songs.</h2>
+						<p class="section-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Sit euismod sed libero tortor interdum et
+							integer. Proin ut enim egestas amet dui, urna.
+							Lectus est massa.
+						</p>
+						<a href="#" class="btn btn-icon">Explore</a>
+					</div>
+					<div class="songs-album">
+						<div>
+							<img src="img/song-1.png" alt="Album 1" />
+						</div>
+						<div>
+							<img src="img/song-2.png" alt="Album 2" />
+						</div>
+						<div>
+							<img src="img/song-3.png" alt="Album 3" />
+						</div>
+						<div>
+							<img src="img/song-4.png" alt="Album 4" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section artists">
+			<div class="wrapper">
+				<div class="artists-grid">
+					<div class="artists-info">
+						<h2 class="headline">
+							Famous artists around the world.
+						</h2>
+						<p class="section-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Sit euismod sed libero tortor interdum et
+							integer. Proin ut enim egestas amet dui, urna.
+							Lectus est massa.
+						</p>
+						<a href="#" class="btn btn-icon">Explore</a>
+					</div>
+					<div class="artists-show">
+						<p class="tag">Outstanding artists:</p>
+						<div class="carousel">
+							<button
+								id="btn-prev"
+								class="btn-carousel btn-prev"
+								aria-label="Previous Artist"
+							>
+								<svg
+									width="12"
+									height="20"
+									viewBox="0 0 12 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2.0625 2.125L9.9375 10L2.0625 17.875"
+										stroke="currentColor"
+										stroke-width="3"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+							<ul class="carousel-items" id="carousel">
+								<li class="carousel-item">
+									<img
+										src="img/carousel-1.png"
+										alt="Artists 1"
+									/>
+								</li>
+								<li class="carousel-item">
+									<img
+										src="img/carousel-2.png"
+										alt="Artists 2"
+									/>
+								</li>
+								<li class="carousel-item">
+									<img
+										src="img/carousel-3.png"
+										alt="Artists 3"
+									/>
+								</li>
+								<li class="carousel-item">
+									<img
+										src="img/carousel-4.png"
+										alt="Artists 4"
+									/>
+								</li>
+								<li class="carousel-item">
+									<img
+										src="img/carousel-1.png"
+										alt="Artists 1"
+									/>
+								</li>
+								<li class="carousel-item">
+									<img
+										src="img/carousel-2.png"
+										alt="Artists 2"
+									/>
+								</li>
+								<li class="carousel-item">
+									<img
+										src="img/carousel-3.png"
+										alt="Artists 3"
+									/>
+								</li>
+								<li class="carousel-item">
+									<img
+										src="img/carousel-4.png"
+										alt="Artists 4"
+									/>
+								</li>
+							</ul>
+							<button
+								id="btn-next"
+								class="btn-carousel btn-next"
+								aria-label="Next Artist"
+							>
+								<svg
+									width="12"
+									height="20"
+									viewBox="0 0 12 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2.0625 2.125L9.9375 10L2.0625 17.875"
+										stroke="currentColor"
+										stroke-width="3"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+						<div class="more-artists">
+							<div class="artists-media">
+								<img src="img/artist-1.png" alt="" />
+								<img src="img/artist-2.png" alt="" />
+								<img src="img/artist-3.png" alt="" />
+								<img src="img/artist-4.png" alt="" />
+							</div>
+							<button class="btn btn-pink">
+								Over 1m artists
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="trial">
+			<div class="wrapper">
+				<div class="trial-container">
+					<h2 class="headline">Start your 30 day trial now.</h2>
+					<a href="#" class="btn btn-blue-2">Start Free Trial</a>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer-inner">
+					<div class="footer-holder">
+						<h3 class="footer-heading">Get Started</h3>
+						<nav class="footer-nav">
+							<a href="#" class="footer-link">Download</a>
+							<a href="#" class="footer-link">Sign up</a>
+							<a href="#" class="footer-link">Manage account</a>
+							<a href="#" class="footer-link">Store</a>
+						</nav>
+					</div>
+					<div class="footer-holder">
+						<h3 class="footer-heading">Company</h3>
+						<nav class="footer-nav">
+							<a href="#" class="footer-link">About</a>
+							<a href="#" class="footer-link">Originals</a>
+							<a href="#" class="footer-link">Job</a>
+						</nav>
+					</div>
+					<div class="footer-holder">
+						<h3 class="footer-heading">Support</h3>
+						<nav class="footer-nav">
+							<a href="#" class="footer-link">Help</a>
+							<a href="#" class="footer-link">Web player</a>
+							<a href="#" class="footer-link">Mobile app</a>
+						</nav>
+					</div>
+					<div class="footer-holder">
+						<h3 class="footer-heading">Available now:</h3>
+						<nav class="footer-app-stores">
+							<a
+								href="#"
+								class="app-store-link"
+								aria-label="Get on App Store"
+							>
+								<img
+									src="img/app-store.png"
+									alt="Get on App Store"
+								/>
+							</a>
+							<a
+								href="#"
+								class="app-store-link"
+								aria-label="Get on Google Play"
+							>
+								<img
+									src="img/play-store.png"
+									alt="Get on Google Play"
+								/>
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/app.js"></script>
+	</body>
+</html>

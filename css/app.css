@@ -1,0 +1,362 @@
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	background-color: #1c1c1e;
+	color: #fff;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.6rem;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+button {
+	background: none;
+	border: none;
+}
+.wrapper {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+@media (min-width: 1920px) {
+	.wrapper {
+		max-width: 158rem;
+	}
+}
+.header-inner {
+	height: 11rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo-box {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.header-link {
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-right: 3.5rem;
+	transition: color 0.3s ease-in-out;
+}
+.header-link:last-of-type {
+	margin-right: 0;
+}
+.header-link:hover {
+	color: #116efa;
+}
+.btn {
+	background: none;
+	border: none;
+	border-radius: 0.8rem;
+	cursor: pointer;
+	color: #000;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 1rem 2.6rem;
+}
+.btn:focus {
+	outline: none;
+}
+.btn-blue {
+	background-color: #116efa;
+}
+.btn-blue-2 {
+	background-color: #64d2ff;
+}
+.btn-pink {
+	background-color: #ff375f;
+	color: #fff;
+}
+.auth-container .btn {
+	color: #fff;
+}
+.auth-container .btn:first-of-type {
+	margin-right: 3.5rem;
+}
+.hero-grid {
+	height: calc(100vh - 11rem);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.hero-img {
+	background-image: url(../img/hero.png), url(../img/square.svg),
+		url(../img/square-blue-2.svg);
+	background-position: center center, left 2rem bottom 10rem,
+		right 8rem top 7rem;
+	background-size: contain, 20.8rem 20.8rem, 10.2rem 10.2rem;
+	background-repeat: no-repeat;
+}
+.hero-title {
+	color: #fff;
+	font-size: 6rem;
+	font-weight: 800;
+	line-height: 0.9;
+	margin-bottom: 3.2rem;
+}
+.hero-title .blue {
+	color: #64d2ff;
+}
+.hero-title .red {
+	color: #ff375f;
+}
+.hero-title .yellow {
+	color: #ffd60a;
+}
+.hero-text,
+.stores-text {
+	color: rgba(235, 235, 245, 0.6);
+}
+.hero-text {
+	font-size: 2.1rem;
+	font-weight: 800;
+	line-height: 144%;
+	width: 420px;
+}
+.hero .btn,
+.trial .btn {
+	font-size: 2.1rem;
+}
+.stores-text {
+	font-size: 1.8rem;
+	margin-top: 3rem;
+}
+.app-stores-container {
+	display: flex;
+}
+.app-store:first-of-type {
+	margin-right: 2rem;
+}
+.square {
+	display: inline-block;
+	background: #fff;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	z-index: 0;
+}
+.section {
+	height: 100vh;
+}
+.songs {
+	background: url(../img/songs-bg.png) center center / cover no-repeat;
+	padding: 7.8rem;
+}
+.headline {
+	font-size: 5rem;
+	font-weight: 800;
+	line-height: 144%;
+}
+.songs-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.songs-info {
+	padding-top: 8rem;
+}
+.section-text {
+	color: rgba(235, 235, 245, 0.6);
+	font-size: 1.8rem;
+	font-weight: 800;
+	line-height: 144%;
+	width: 55rem;
+}
+.btn-icon {
+	background: url(../img/chevron-right.svg) center right 1rem / 0.66rem
+		no-repeat;
+	color: #64d2ff;
+	font-size: 2.1rem;
+	font-weight: 800;
+	padding-left: 0;
+}
+.songs-album {
+	display: grid;
+	grid-template-columns: repeat(2, 255px);
+	gap: 2.6rem;
+}
+.songs-album img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+.songs-album div:nth-of-type(2) img {
+	top: 9rem;
+}
+.songs-album div:nth-of-type(3) img {
+	transform: scale(1.15);
+}
+.songs-album div:nth-of-type(4) img {
+	top: 9rem;
+	transform: scale(1.15);
+}
+.artists {
+	background: url(../img/artists-bg.png) center center / cover no-repeat;
+}
+.artists-grid {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-content: center;
+}
+.artists .headline {
+	margin-top: 0;
+	width: 42rem;
+}
+.artists-show {
+	overflow-x: hidden;
+}
+.artists .tag {
+	color: #ff375f;
+	font-size: 2.1rem;
+	font-weight: 800;
+	line-height: 144%;
+	margin: 0 0 4rem;
+}
+.carousel {
+	position: relative;
+	padding: 0 4rem;
+}
+.carousel-items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	display: flex;
+	scroll-behavior: smooth;
+}
+.carousel-item {
+	cursor: pointer;
+	margin-right: 2.6rem;
+}
+.carousel-item:last-of-type {
+	margin-right: 0;
+}
+.carousel-item img {
+	height: 11.6rem;
+	width: 11.6rem;
+}
+.btn-carousel {
+	color: #fff;
+	cursor: pointer;
+	position: absolute;
+	top: 3.8rem;
+}
+.btn-carousel:focus {
+	outline: none;
+	border: 1px solid #ff375f;
+}
+.btn-carousel svg {
+	height: 3.8rem;
+	width: 2rem;
+}
+.btn-prev svg {
+	transform: rotate(180deg);
+}
+.btn-prev {
+	left: -0.5rem;
+}
+.btn-next {
+	right: -0.5rem;
+}
+.more-artists {
+	margin-top: 4.5rem;
+	display: flex;
+	align-items: center;
+}
+.artists-media {
+	margin-right: 2rem;
+	display: flex;
+}
+.artists-media img {
+	cursor: pointer;
+	height: 5.9rem;
+	width: 5.9rem;
+}
+.artists-media img:not(:first-of-type) {
+	margin-left: calc(5.9rem / 2 * -1);
+}
+.artists .btn {
+	border-radius: 3rem;
+	font-size: 1.6rem;
+	font-weight: 800;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+.trial {
+	background: #232323 url(../img/trial-bg.png) center center / cover no-repeat;
+	height: 63.8rem;
+	padding: 8rem;
+}
+.trial .wrapper {
+	height: 100%;
+}
+.trial-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.trial .headline {
+	margin-top: 0;
+	margin-bottom: 8rem;
+}
+.hidden {
+	display: none;
+}
+.footer {
+	padding: 9rem 0;
+}
+.footer-inner {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.footer-heading {
+	color: rgba(235, 235, 245, 0.6);
+	font-size: 2.15rem;
+	font-weight: 700;
+	line-height: 124%;
+	margin: 0;
+}
+.footer-nav {
+	margin-top: 6rem;
+	display: flex;
+	flex-direction: column;
+}
+.footer-link {
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 124%;
+	padding: 2rem 0;
+	transition: color 0.3s ease-in-out;
+}
+.footer-link:first-of-type {
+	padding-top: 0;
+}
+.footer-link:hover {
+	color: #ff375f;
+}
+.footer-holder:last-of-type .footer-heading {
+	font-weight: 800;
+	font-size: 1.8rem;
+	line-height: 144%;
+}
+.footer-app-stores {
+	margin-top: 1.6rem;
+	display: flex;
+}
+.app-store-link:first-of-type {
+	margin-right: 2rem;
+}
